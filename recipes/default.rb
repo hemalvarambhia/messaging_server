@@ -9,7 +9,7 @@
 include_recipe "chef-zeromq"
 include_recipe "chef-ruby"
 
-["ffi", "ffi-rzmq", "zmqmachine"].each do |gem|
+["rbczmq", "zmqmachine"].each do |gem|
   gem_package gem do
     action :install
   end
